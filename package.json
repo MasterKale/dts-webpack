@@ -1,0 +1,23 @@
+{
+  "name": "dts-webpack",
+  "version": "1.0.0",
+  "description": "Django, TypeScript, SCSS, and Webpack, together at last",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.9.0",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --show-error-details",
+    "build": "webpack && ../venv/bin/python ../manage.py collectstatic --noinput --ignore *.map",
+    "build-win": "webpack && ..\\\"venv\\Scripts\\python.exe\" ..\\manage.py collectstatic --noinput --ignore *.map"
+  },
+  "license": "ISC",
+}
