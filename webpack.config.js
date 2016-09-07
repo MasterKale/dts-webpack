@@ -40,7 +40,7 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				// `?sourceMap` tells sass-loader to output source maps for each css file
-				loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap')
+				loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!sass-loader?sourceMap')
 			}
 		]
 	},
