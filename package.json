@@ -19,5 +19,5 @@
     "build": "webpack && ../venv/bin/python ../manage.py collectstatic --noinput --ignore *.map",
     "build-win": "webpack && ..\\\"venv\\Scripts\\python.exe\" ..\\manage.py collectstatic --noinput --ignore *.map"
   },
-  "license": "ISC",
+  "license": "ISC"
 }
